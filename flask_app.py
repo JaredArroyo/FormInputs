@@ -14,3 +14,15 @@ def process_inputs():
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
                            output="You're a wizard %s." % name)
+
+
+def dedupe(x):
+    y = []
+    for i in x:
+        if i not in y:
+            y.append(i)
+
+    return y
+
+animals = ['cats','cats','cats','dogs','pandas']
+print(dedupe(animals))
