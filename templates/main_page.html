@@ -10,34 +10,60 @@
     <!--<script src="../static/js/jquery-3.3.1.slim.min.js"></script>-->
     <!--<script src="../static/js/popper.min.js"></script>-->
   </head>
-  <body>
     <div id="banner" class="container">
       <h1 class="display-4">Hello, world!</h1>
     </div>
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">First Name</label>
+          <label for="input_name">Overwatch Username</label>
           <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">Select Your Main</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>Ana</option>
+            <option>Ashe</option>
+            <option>Bastion</option>
+            <option>Brigitte</option>
+            <option>D.va</option>
+            <option>Doomfist</option>
+            <option>Genji</option>
+            <option>Hanzo</option>
+            <option>Junkrat</option>
+            <option>Lucio</option>
+            <option>McCree</option>
+            <option>Mei</option>
+            <option>Mercy</option>
+            <option>Moira</option>
+            <option>Orisa</option>
+            <option>Pharah</option>
+            <option>Reaper</option>
+            <option>Reinhardt</option>
+            <option>Roadhog</option>
+            <option>Soldier: 76</option>
+            <option>Sombra</option>
+            <option>Symmetra</option>
+            <option>Torbjorn</option>
+            <option>Tracer</option>
+            <option>Widowmaker</option>
+            <option>Winston</option>
+            <option>Wrecking Ball</option>
+            <option>Zarya</option>
+            <option>Zenyatta</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
+          <label for="input_select">Select Your Rank</label>
           <select multiple class="form-control" name="input_select" id="input_select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Bronze</option>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platinum</option>
+            <option>Diamond</option>
+            <option>Master</option>
+            <option>GrandMaster</option>
+            <option>Top 500</option>
           </select>
         </div>
         <div class="form-group">
